@@ -1,0 +1,18 @@
+
+
+#greet-container{
+    background-color: red;
+    display: flex;
+    width: 80%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+#greet{
+    color: yellow;
+    font-weight: bold;
+    font-size: 90px;
+}
