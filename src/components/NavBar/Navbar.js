@@ -6,13 +6,13 @@ import CartWidget from './CartWidget/CartWidget'
 
 const Navbar = () => {
   return (
-    <body>
+    <>
         <div id='navbar'>
             <Brand/>
             <Categories/>
             <CartWidget/>
         </div>
-    </body>  
+    </>  
   )
 }
 
