@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
       getProduct()
     }, [id])
   return (
-    <div className="itemDetailContainer">
+    <div className="item-detail-container">
         {productSelected && 
           <ItemDetail productSelected={productSelected} ></ItemDetail>}
     </div>

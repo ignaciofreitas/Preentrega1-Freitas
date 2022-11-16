@@ -56,11 +56,12 @@
     cursor: pointer;
     background-color: #00ABCC;
     border-radius: 12px;
-    color: aliceblue;
+    color: #27496D;
 }
 
 .add-to-cart-button:hover{
-    background-color: rgb(148, 198, 241);
-    color: black;
-    border: solid black 1px;
+    color: #00ABCC;
+    border-radius: 12px;
+    background-color: #27496D;
+    border: solid 2px #00ABCC;
 }

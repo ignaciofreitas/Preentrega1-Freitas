@@ -1,8 +1,10 @@
-.itemDetailContainer{
+.item-detail-container{
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     background-color: #142850;
+    padding-top: 20px;
 }
 
