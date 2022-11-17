@@ -1,5 +1,5 @@
-import './Categories.css'
 import { NavLink } from 'react-router-dom'
+import './Categories.css'
 
 const Categories = () => {
   return (

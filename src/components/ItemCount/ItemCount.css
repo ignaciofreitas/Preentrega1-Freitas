@@ -1,17 +1,42 @@
 #prod-qty{
     width: 20%;
+    display: flex;
+    width: 100%;
 }
 
-#prod-qty button{
-    width: 100%;
+#prod-counter{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#counter{
+    color:#00ABCC;   
+    width: 10%;
+}
+
+
+#prod-buttons{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prod-buttons button{
+    width: 50%;
+    height: 60%;
     border: none;
     background-color:#00ABCC;
     color: #27496D;
-    border-radius: 10px;  
+    border-radius: 10px;
+    margin-right: 4px; 
 }
 
 #prod-qty button:hover{
     color:#00ABCC;
     background-color: #27496D;
-    border: 2px solid #00ABCC;  
+    border: 2px solid #00ABCC;
+     
 }

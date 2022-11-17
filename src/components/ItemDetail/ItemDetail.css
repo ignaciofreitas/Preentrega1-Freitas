@@ -37,15 +37,21 @@
     font-size: 20px;
 }
 
+.prod-descri iframe{
+    margin-top: 30px;
+    width: 90%;
+    height: 60%;
+    opacity: .4;
+    border-radius: 15px;
+}
+
+.prod-descri iframe:hover{
+    opacity: 1;
+    border: solid white 2px;
+}
+
 #counter-container{
     display: flex;
     width: 60%;
 }
 
-#counter{
-    color:#00ABCC;   
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
