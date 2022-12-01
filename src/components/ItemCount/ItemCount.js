@@ -1,25 +1,30 @@
 import "./ItemCount.css"
-import { useState } from "react"
+//import { useState } from "react"
 
 
-const ItemCount = () => {
-    const [count, setCount] = useState(0)
-    const decrease = () => {
-        setCount(count - 1)
-    }
+const ItemCount = ({ setCount }) => {
 
     const increase = () => {
-        setCount(count + 1)
+        setCount((currentValue) => currentValue + 1)
+    }
+    const decrease = () => {
+        setCount((currentValue) => {
+            if (currentValue > 0) {
+                return currentValue - 1
+            }
+            else {
+                return currentValue
+            }
+        })
     }
 
     return (
         <div id="prod-qty">
             <div id="prod-counter">
-                <h2 id="counter">{count}</h2>
             </div>
             <div id="prod-buttons">
                 <button onClick={increase} >+</button>
-                <button disabled={count <= 0} onClick={decrease} >-</button>
+                <button onClick={decrease} >-</button>
             </div>
         </div>
     )

@@ -53,5 +53,14 @@
 #counter-container{
     display: flex;
     width: 60%;
+    height: 20%;
 }
 
+#counter{
+    color:#00ABCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 20%;
+    height: 80%;
+}

@@ -1,12 +1,15 @@
-// import { useState } from "react"
+
 import ItemCount from "../ItemCount/ItemCount"
-import { Link } from "react-router-dom"
+//import { Link } from "react-router-dom"
 import "./ItemDetail.css"
+import { useState, useContext } from "react"
+import { cartContext } from "../../context/cartProvider"
 
 const ItemDetail = ({ productSelected }) => {
-  // const [count, setCount] = useState(0)
-  
+  const [count, setCount] = useState(0)
+  const { addToCart } = useContext(cartContext)
   return (
+    
     <div className="item-detail">
       <div className="item-description">
         <div className='item-cards2'>
@@ -16,12 +19,12 @@ const ItemDetail = ({ productSelected }) => {
             <p><strong>{productSelected.marca}</strong></p>
             <p>${productSelected.precio}</p>
             <div id="counter-container">
-              {/* <h2 id="counter"> {count}</h2> */}
-              <ItemCount  ></ItemCount>
+              <h2 id="counter"> {count}</h2>
+              <ItemCount setCount={setCount} ></ItemCount>
             </div>
-            <Link to="/cart">
-              <button className='add-to-cart-button'>Confirmar compra</button>
-            </Link>
+
+            <button onClick={() => addToCart(productSelected, count)} className='add-to-cart-button'>Agregar al carrito</button>
+
           </div>
         </div>
       </div>
@@ -32,7 +35,6 @@ const ItemDetail = ({ productSelected }) => {
         <p>Color: {productSelected.color}</p>
         <p>Estado: {productSelected.estado}</p>
         <p>Material: {productSelected.material}</p>
-        <iframe src={productSelected.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
       </div>
     </div>
   )
