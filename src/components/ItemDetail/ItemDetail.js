@@ -6,13 +6,14 @@ import { useState, useContext } from "react"
 import { cartContext } from "../../context/cartProvider"
 
 const ItemDetail = ({ productSelected }) => {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(1)
   const { addToCart } = useContext(cartContext)
+
   return (
-    
     <div className="item-detail">
       <div className="item-description">
         <div className='item-cards2'>
+          
           <img alt="prod-img" className='product-img' src={`/images/${productSelected.imagen}.jpg`} />
           <div className='item-descri'>
             <p>{productSelected.nombre}</p>
@@ -24,7 +25,6 @@ const ItemDetail = ({ productSelected }) => {
             </div>
 
             <button onClick={() => addToCart(productSelected, count)} className='add-to-cart-button'>Agregar al carrito</button>
-
           </div>
         </div>
       </div>
