@@ -6,8 +6,7 @@ const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
 
     const totalPrice = () =>{
-        return cart.reduce(
-            (prev, act) => prev + act.quantity * act.price, 0)    
+        return cart.reduce((prev, act) => prev + act.quantity * act.precio, 0)    
     
     }
     
@@ -28,7 +27,7 @@ const CartProvider = ({ children }) => {
 
     const isInCart = (id) => cart.find(product => product.id === id) ? true : false
     return (
-        <cartContext.Provider value={{ cart, addToCart, removeProduct, clearCart, totalPrice, isInCart}} >
+        <cartContext.Provider value={{ cart, addToCart, removeProduct, clearCart, totalPrice, }} >
             {children}
         </cartContext.Provider>
     )

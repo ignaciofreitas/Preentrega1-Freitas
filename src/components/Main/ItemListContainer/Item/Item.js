@@ -6,13 +6,15 @@ const Item = ({ producto }) => {
 
         <div className='item-cards'>
 
-            <img className='product-img' alt='prod-img' src={`/images/${producto.imagen}.jpg`} />
+            <img className='product-img' alt='prod-img' src={`/images/${producto.imageId}`} />
             <div className='item-descri'>
-                <p> {producto.nombre} </p>
-                <p> {producto.marca} </p>
-                <p> $ {producto.precio} </p>
-                <Link className='seeMoreLink' to={`item/${producto.id}`}>Ver más</Link>
-                <button className='add-to-cart-button'>Agregar al carrito</button>
+                <p> {producto.title} </p>
+                <p> {producto.description} </p>
+                <p> $ {producto.price   } </p>
+                <Link className='seeMoreLink' to={`item/${producto.id}`}>
+                    <button className='add-to-cart-button'>Ver mas</button>
+                </Link>
+
             </div>
         </div>
     )

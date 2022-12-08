@@ -1,11 +1,22 @@
 .cartItem{
     display: flex;
-    border-bottom: 1px solid grey;
-    max-width: 500px;
+    border-bottom: 1px solid #00ABCC;
+    width: 40%;
+    height: 260px;
     margin: 1rem auto;
+    color:#00ABCC;
+    
 }
 
 .cartItem img{
-    width: 200px;
+    width: 40%;
     margin-right: 1rem;
+}
+
+.trash{
+    margin-top: 20px;
+    height: 14%;
+    width: 10%;
+    filter: invert(18%) sepia(89%) saturate(7495%) hue-rotate(1deg) brightness(103%) contrast(117%);
+    cursor: pointer;
 }

@@ -1,0 +1,35 @@
+.cart-items-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    color:#00ABCC;
+    font-size: 34px;
+}
+
+.link-home{
+    text-decoration: none;
+    font-size: 22px;
+    color:#00ABCC;
+    margin-top: 120px;
+    background-color:#00ABCC;
+    border-radius: 15px;
+    padding: 10px;
+    color: #27496D;
+}
+
+.link-home:hover{
+    color:#00ABCC;
+    background-color: #27496D;
+    border: solid 2px #00ABCC;
+}

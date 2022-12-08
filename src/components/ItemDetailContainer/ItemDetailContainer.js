@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
   const { id } = useParams()
   const getProduct = () => {
     const productFiltered = data.filter((product) => {
-      return product.id == id
+      return product.id === id
     })
     setProductSelected(...productFiltered)
   }
