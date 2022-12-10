@@ -16,10 +16,9 @@ const Cart = () => {
 
   const order = {
     buyer: {
-      name: "ignacio",
-      email: "123@123.com",
-      phone: "123456",
-      adress: "asdd"
+      name: formValues.name,
+      email: formValues.email,
+      phone: formValues.phone,
     },
     items: cart,
     total: totalPrice()
@@ -30,8 +29,7 @@ const Cart = () => {
     const orderCollection = collection(db, "orders")
     addDoc(orderCollection, order)
     .then((response)=>{ alert(`Orden creada numero ${response.id}`)
-    let handleInputChange = (e) =>{
-      console.log(e.target.value)
+    const handleInputChange = (e) =>{
     }
     return(response)
   })
@@ -58,6 +56,11 @@ const Cart = () => {
       </>
     )
   }
+  const handleInputChange =(e)=>{
+    setFormValues({
+      ...formValues, [e.target.name] : e.target.value
+    })
+  }
   return (
     <div className="cart-items-container">
       <>
@@ -65,13 +68,15 @@ const Cart = () => {
           cart.map(product => <CartItem key={product.id} product={product} />)
         }
         <p className="text">Total: $ {totalPrice()}</p>
+        <Link to ="/">
         <button onClick={newOrder} >Confirmar compra</button>
+        </Link>
       </>
       <div>
         <h2>Formulario</h2>
-        <input name="name" type="text" placeholder="Nombre" value={formValues.name} onChange={handleInputChange}>  </input>
-        <input name="phone" type="text" placeholder="Telefono" value={formValues.phone} onChange={handleInputChange} ></input>
-        <input name="email"  type="text" placeholder="Email" value={formValues.email} onChange={handleInputChange} ></input>
+        <input type="text" value={formValues.name} onChange={handleInputChange} name="name" />  
+        <input type="text" value={formValues.phone} onChange={handleInputChange} name="phone" />
+        <input type="text" value={formValues.email} onChange={handleInputChange} name="email"/>
       </div>
     </div>
     
