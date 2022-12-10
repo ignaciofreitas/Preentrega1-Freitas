@@ -8,13 +8,13 @@ const CartItem = ({ product }) => {
     return (
         
             <div className='cartItem'>
-                <img src={`/images/${product.imagen}.jpg`} alt="foto" />
+                <img src={`/images/${product.imageId}`} alt="foto" />
                 <div>
-                    <p> {product.nombre}</p>
-                    <p> {product.marca} </p>
-                    <p> Precio unitario: $ {product.precio} </p>
+                    <p> {product.title}</p>
+                    <p> {product.brand} </p>
+                    <p> Precio unitario: $ {product.price} </p>
                     <p> Unidades: {product.quantity} </p>
-                    <p> Subtotal: $ {product.quantity * product.precio} </p>
+                    <p> Subtotal: $ {product.quantity * product.price} </p>
                     <img className="trash" onClick={() => { removeProduct(product.id) }} alt="trash" src={`/images/trash.svg`}/>
                 </div>
             </div>

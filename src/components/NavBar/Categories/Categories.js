@@ -14,7 +14,7 @@ const Categories = () => {
         <NavLink to="/category/baterias" className="links" >Baterias</NavLink>
       </li>
       <li className='category-items'>
-        <NavLink to="/category/violines" className="links" >Violines</NavLink>
+        <NavLink to="/category/cuerdas" className="links" >Cuerdas</NavLink>
       </li>
       <li className='category-items'>
         <NavLink to="/category/percusion" className="links" >Percusión</NavLink>

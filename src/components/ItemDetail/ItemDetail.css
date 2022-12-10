@@ -15,11 +15,15 @@
     align-items: center;
     margin: 10px;
     border-radius: 15px;
-    width: 60%;
+    width: 56%;
     height: 70%;
     text-align: center;
     overflow: hidden;
     box-shadow:  4px 4px 8px black;
+}
+
+.item-cards2 img{
+    height: 54%;
 }
 
 .prod-descri{
@@ -35,19 +39,6 @@
 .prod-descri p{
     font-weight: bold;
     font-size: 20px;
-}
-
-.prod-descri iframe{
-    margin-top: 30px;
-    width: 90%;
-    height: 60%;
-    opacity: .4;
-    border-radius: 15px;
-}
-
-.prod-descri iframe:hover{
-    opacity: 1;
-    border: solid white 2px;
 }
 
 #counter-container{
