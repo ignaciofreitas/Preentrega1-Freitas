@@ -33,3 +33,37 @@
     background-color: #27496D;
     border: solid 2px #00ABCC;
 }
+
+.confirm-order{
+    margin: 10px 10px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #00ABCC;
+    border-radius: 12px;
+    color: #27496D;
+}
+
+.confirm-order:hover{
+    color: #00ABCC;
+    border-radius: 12px;
+    background-color: #27496D;
+    border: solid 2px #00ABCC;
+}
+
+.clear-cart{
+    margin: 10px 10px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #00ABCC;
+    border-radius: 12px;
+    color: #27496D;
+}
+
+.clear-cart:hover{
+    color: #00ABCC;
+    border-radius: 12px;
+    background-color: #27496D;
+    border: solid 2px #00ABCC;
+}

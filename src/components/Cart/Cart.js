@@ -7,7 +7,7 @@ import { getFirestore, addDoc, collection, doc, updateDoc } from "firebase/fires
 import "./Cart.css"
 
 const Cart = () => {
-  const { cart, totalPrice } = useContext(cartContext)
+  const { cart, totalPrice, clearCart } = useContext(cartContext)
   let [formValues, setFormValues] = useState({
         name: " ",
         phone: " ",
@@ -69,8 +69,9 @@ const Cart = () => {
         }
         <p className="text">Total: $ {totalPrice()}</p>
         <Link to ="/">
-        <button onClick={newOrder} >Confirmar compra</button>
+        <button className="confirm-order" onClick={newOrder} >Confirmar compra</button>
         </Link>
+        <button className="clear-cart" onClick={clearCart} >Vaciar carrito</button>
       </>
       <div>
         <h2>Formulario</h2>
