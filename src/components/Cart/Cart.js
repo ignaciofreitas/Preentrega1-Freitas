@@ -29,8 +29,6 @@ const Cart = () => {
     const orderCollection = collection(db, "orders")
     addDoc(orderCollection, order)
     .then((response)=>{ alert(`Orden creada numero ${response.id}`)
-    const handleInputChange = (e) =>{
-    }
     return(response)
   })
     .then ((response) =>{

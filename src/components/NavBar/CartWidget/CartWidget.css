@@ -25,3 +25,8 @@
     padding: 10px;
 }
 
+@media (max-width: 770px) {
+    #cart-container{
+        flex-direction: column;
+    }
+  }

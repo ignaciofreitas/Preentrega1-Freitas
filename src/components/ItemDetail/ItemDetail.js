@@ -12,8 +12,7 @@ const ItemDetail = ({ productSelected }) => {
   return (
     <div className="item-detail">
       <div className="item-description">
-        <div className='item-cards2'>
-          
+        <div className='item-cards2'> 
           <img alt="prod-img" className='product-img' src={`/images/${productSelected.imageId}`} />
           <div className='item-descri'>
             <p>{productSelected.title}</p>
@@ -23,7 +22,6 @@ const ItemDetail = ({ productSelected }) => {
               <h2 id="counter"> {count}</h2>
               <ItemCount setCount={setCount} ></ItemCount>
             </div>
-
             <button onClick={() => addToCart(productSelected, count)} className='add-to-cart-button'>Agregar al carrito</button>
           </div>
         </div>
